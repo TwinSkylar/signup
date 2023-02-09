@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Beach Volleyball Sign-up!</title>
+</head>
+
+<body>
+    <div class="splash">
+        <img src="./img/odin-lined.png">
+        <p>Photo by XYZ on Where?</p>
+    </div>
+    <section>
+        <p class="information">Come join us for some fun volleyball! Enjoy the sun meet new people and hang out.</p>
+        <p class="details">Leave us some contact information so we know how many people to expect</p>
+    </section>
+    <form>
+        <legend>Let's do this</legend>
+        <p>
+            <label for="f_name">
+                <span>First Name</span>
+                <strong><span aria-label="required">*</span>
+                </strong>
+            </label>
+            <input type="text" id="f_name" name="f_name" required />
+            <label for="l_name">Last Name:</span></label>
+            <input type="text" id="l_name" name="l_name" />
+        </p>
+        <p>
+            <label for="email">
+                <span>Email</span>
+                <strong><span aria-label="required">*</span>
+                </strong>
+            </label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone">Enter your phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Format: 123-456-7890</small>
+        </p>
+        <p>
+            <label for="password"> Password
+            </label>
+            <input type="password" id="password" name="password" required />
+            <label for="vPassowrd">Confirm Password</label>
+            <input type="password" id="vPassword" name="vPassword" required>
+        </p>
+    </form>
+    <section>
+        <p>
+            <button type="submit">Sign Up</button>
+        </p>
+        <p>
+            Already joined? Login
+        </p>
+    </section>
+</body>
+
+</html>
