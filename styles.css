@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+interactiveTop em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,26 +91,178 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/** End of reset**/
+
+@font-face {
+	font-family: "rightFont";
+	src: url("font/itim-regular-webfont.woff2") format("woff2"),
+		url("font/itim-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "leftFont";
+	src: url("font/ubuntu-regular-webfont.woff2") format("woff2"),
+		url("font/ubuntu-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.splash {
+
+	/** Adjust background parameters **/
+	background-image: url("./img/meritt-thomas-dX3q7dmc_AI-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #83d4fe;
+
+	/** Adjust content layout **/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: leftFont, sans-serif;
+
+}
+
+.logo {
+	margin-top: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	width: 100%;
+	font-size: 5rem;
+	Background: rgba(0, 0, 0, 0.3);
+	color: #EAFBFC;
+}
+
+.credit {
+	margin-bottom: 15%;
+	color: #0C6DB2;
+
+}
+
+img {
+	height: 5rem;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 40% 70%;
+	height: 100vh;
+	font-family: rightFont, sans-serif;
+
+}
+
+.interactive {
+	display: grid;
+	font-size: 24px;
+	height: 100vh;
+}
+
+
+
+.interactiveTop,
+.interactiveBottom {
+
+	display: flex;
+	flex-direction: column;
+}
+
+.interactiveTop {
+	justify-content: center;
+	align-items: center;
+	background-color: #E1FAF8;
+}
+
+small {
+	font-size: 1rem;
+}
+
+form {
+	line-height: 2rem;
+	padding: 20px;
+}
+
+form p {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.formText{
+	padding-bottom: 20px;
+	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+form input {
+	max-width: 85%;
+}
+
+form label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+button {
+	margin-top: 32px;
+	border: none;
+	background-color: #0C6DB2;
+	padding: 12px 48px;
+	border-radius: 8px;
+	box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.1rem;
+	max-width: 20%;
 }
