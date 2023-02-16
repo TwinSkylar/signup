@@ -136,6 +136,10 @@ table {
 
 /** End of reset**/
 
+:root{
+	--logo-height:5rem;
+}
+
 @font-face {
 	font-family: "rightFont";
 	src: url("font/itim-regular-webfont.woff2") format("woff2"),
@@ -167,7 +171,6 @@ table {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-
 	font-family: leftFont, sans-serif;
 
 }
@@ -178,25 +181,24 @@ table {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	width: 100%;
-	font-size: 5rem;
+	font-size: var(--logo-height);
 	Background: rgba(0, 0, 0, 0.3);
 	color: #EAFBFC;
 }
 
 .credit {
-	margin-bottom: 15%;
+	margin-bottom: 30px;
 	color: #0C6DB2;
 
 }
 
 img {
-	height: 5rem;
+	height: var(--logo-height);
 }
 
 .container {
 	display: grid;
-	grid-template-columns: 40% 70%;
+	grid-template-columns: 40% 60%;
 	height: 100vh;
 	font-family: rightFont, sans-serif;
 
@@ -242,8 +244,9 @@ form p {
 	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.2);
 }
 
-form input {
+form input {	
 	max-width: 85%;
+	font-size: 1rem;
 }
 
 form label {
