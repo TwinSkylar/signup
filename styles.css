@@ -247,6 +247,14 @@ form p {
 form input {	
 	max-width: 85%;
 	font-size: 1rem;
+	border-color: #E5E7EB;
+	border-radius: 5px;
+}
+
+form input:focus {	
+	outline: none;
+	border: solid #2196f3;
+
 }
 
 form label {

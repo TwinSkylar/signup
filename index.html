@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <script defer src="./signup.js" ></script>
     <title>Beach Volleyball Sign-up!</title>
 </head>
 
@@ -45,7 +46,7 @@
                         <strong><span aria-label="required">*</span>
                         </strong>
                     </label>
-                    <label for="l_name">Last Name:</span></label>
+                    <label for="l_name">Last Name</span></label>
                     <input type="text" id="f_name" name="f_name" required />
                     <input type="text" id="l_name" name="l_name" />
 
@@ -59,9 +60,10 @@
                     <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
                     <label for="password"> Password</label>
-                    <label for="vPassowrd">Confirm Password</label>
+                    <label for="vPassword">Confirm Password</label>
                     <input type="password" id="password" name="password" required />
                     <input type="password" id="vPassword" name="vPassword" required>
+                    <p class="mismatch"></p>
                 </p>
                 <section class="interactiveBottom">
 
